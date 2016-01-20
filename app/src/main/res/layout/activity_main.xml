@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.svs.myprojects.serviceproject.MainActivity">
+
+    <!--**************************************************************************************** -->
+    <!-- SERVICE  -->
+    <!--**************************************************************************************** -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SERVICE"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:onClick="start_button_function"
+            android:text="Start Music" />
+
+        <Button
+            android:id="@+id/stop_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:onClick="stop_button_function"
+            android:text="Stop Music" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_music_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Music status"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <!--**************************************************************************************** -->
+    <!-- INTENT SERVICE  -->
+    <!--**************************************************************************************** -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimaryDark" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INTENT SERVICE"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/start_intent_service_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:onClick="start_intent_service_function"
+            android:text="Start Intent Service" />
+
+        <Button
+            android:id="@+id/stop_intent_service_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:onClick="stop_intent_service_function"
+            android:text="Stop Intent Service" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_intent_service_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Intent Service status"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <!--**************************************************************************************** -->
+    <!-- BOUND SERVICE  -->
+    <!--**************************************************************************************** -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimaryDark" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BOUND SERVICE"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/start_bound_service_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:onClick="start_bound_service_function"
+            android:text="Start Bound Service" />
+
+        <Button
+            android:id="@+id/stop_bound_service_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:onClick="stop_bound_service_function"
+            android:text="Stop Bound Service" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_bound_service_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Bound Service status"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimaryDark" />
+</LinearLayout>
